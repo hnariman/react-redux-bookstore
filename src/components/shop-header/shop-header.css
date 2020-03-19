@@ -1,0 +1,41 @@
+.shop-header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #7179d1;
+  border-bottom: 3px solid white;
+}
+
+.shop-header .logo {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #ffffff;
+  width: 100%;
+}
+
+.shop-header .logo:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.shop-header .shopping-cart {
+  align-self: center;
+  font-size: 1.3rem;
+  padding-right: 1rem;
+  margin-top: 15px;
+  color: #ffffff;
+  float: right;
+}
+
+.shop-header .shopping-cart .cart-icon {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+a {
+  color: green;
+}
+
+

@@ -1,0 +1,40 @@
+.btn-info {
+    background-color: #7179d1;
+    border: 0;
+}
+
+.btn-info:hover {
+    background-color: #d84b6b;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: #302f3a;
+    color: #fff;
+}
+
+.main {
+    min-height: 100%;
+}
+
+.book-list li {
+    display: inline-block;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+main {
+    margin-bottom: 25rem;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        display: inline-block;
+    }
+}
