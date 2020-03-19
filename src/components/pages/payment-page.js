@@ -12,7 +12,6 @@ import './page.css';
 class PaymentPage extends React.Component {
     state = {
         inputValue: '',
-        promocodeValue: 'Restore',
         discount: 0
     }
 
@@ -23,8 +22,8 @@ class PaymentPage extends React.Component {
     }
 
     checkPromocode = () => {
-        if (this.state.inputValue === 'Restore') {
-            console.log("Restore!");
+        if (this.state.inputValue === 'Bookstore') {
+            
             this.setState({
                 discount: 0.2,
                 inputValue: ''
@@ -56,14 +55,12 @@ class PaymentPage extends React.Component {
                     <div className="delivery">
                         <h2 className="title-delivery">Delivery</h2>
                         <div className="payment-choose courier">
-                            {/* <i className="fas fa-truck"></i> */}
                             <input type="radio" name="Choose type of delivery" onClick={() => {
-                                console.log('input has clicked!');
+                                // console.log('input has clicked!');
                                 onExpDelInputClick()}}/>
                             <span>Express delivery</span>
                         </div>
                         <div className="payment-choose">
-                            {/* <i className="fas fa-store"></i> */}
                             <input type="radio" name="Choose type of delivery" onClick={onPickUpInputClick}/>
                             <span>Pick up</span>
                         </div>
@@ -75,7 +72,7 @@ class PaymentPage extends React.Component {
                                     this.checkPromocode();
                                 }
                             }}
-                            placeholder='Enter "Restore"'
+                            placeholder='Enter "Bookstore"'
                             value={this.state.inputValue}
                             onChange={this.onChangeInput}/>
                     </div>

@@ -47,7 +47,7 @@ const updateOrder = (state, bookId, quantity) => {
   const newItem = updateCartItem(book, item, quantity);
   const newCartItems = updateCartItems(cartItems, newItem, itemIndex);
 
-  console.log(newCartItems);
+  // console.log(newCartItems);
 
   let total = 0;
   let count = 0;

@@ -1,5 +1,5 @@
 const updateTotalCost = (state, deliveryCost) => {
-    console.log(`updateTotalCost() ${deliveryCost}`);
+    // console.log(`updateTotalCost() ${deliveryCost}`);
     return {
         deliveryCost
     }
@@ -12,7 +12,7 @@ const generateRandomCode = () => {
         code += abc[Math.floor(Math.random() * abc.length)];
     }
     code = code.toUpperCase();
-    console.log(code);
+    // console.log(code);
     return {
         code
     }
